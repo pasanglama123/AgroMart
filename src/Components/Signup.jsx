@@ -3,12 +3,6 @@ import logo from '../assets/logo.jpeg';
 import { Link } from 'react-router-dom';
 
 const Signup = () => {
-  const [province, setProvince] = useState('');
-
-  const handleChange = (e) => {
-    setProvince(e.target.value);
-  };
-
   return (
     <div className="w-screen h-screen bg-[#E5E5E5] flex justify-center items-center overflow-auto">
       <div className="bg-white p-6 h-full w-full max-w-screen-md  md:w-[70%] lg:w-[60%] xl:w-[50%] rounded-md shadow-md ">
@@ -61,38 +55,7 @@ const Signup = () => {
 
 
           <div className="text-[#057E0D] font-semibold">Location</div>
-          <div className="location_select flex flex-col gap-4 md:flex-row md:space-x-4">
-            <select
-              value={province}
-              onChange={handleChange}
-              className="flex-1 h-10 border border-[#ccc] outline-none focus:border-[#057E0D] duration-300"
-            >
-              <option value="">Select Province</option>
-              <option value="province1">Koshi Province</option>
-              <option value="province2">Madhesh Province</option>
-              <option value="province3">Bagmati Province</option>
-              <option value="province4">Gandaki Province</option>
-              <option value="province5">Lumbini Province</option>
-              <option value="province6">Karnali Province</option>
-              <option value="province7">Sudurpaschim Province</option>
-            </select>
-
-            <select
-              className="flex-1 h-10 border border-[#ccc] outline-none focus:border-[#057E0D] duration-300"
-            >
-              <option value="">District</option>
-              <option value="">Humla</option>
-              <option value="">Jumla</option>
-              <option value="">Mugu</option>
-            </select>
-
-            <select
-              className="flex-1 h-10 border border-[#ccc] outline-none focus:border-[#057E0D] duration-300"
-            >
-              <option value="">Local Level</option>
-              <option value="">Birtamod</option>
-            </select>
-          </div>
+          
 
           <div className="flex justify-center mt-2">
             <button
