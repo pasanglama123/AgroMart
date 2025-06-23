@@ -10,7 +10,6 @@ const Signup = () => {
   };
 
   return (
-    // hello i am pasang tengin lama
     <div className="w-screen h-screen bg-[#E5E5E5] flex justify-center items-center overflow-auto">
       <div className="bg-white p-6 h-full w-full max-w-screen-md  md:w-[70%] lg:w-[60%] xl:w-[50%] rounded-md shadow-md ">
 
