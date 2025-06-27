@@ -1,7 +1,13 @@
 import React,{useState} from 'react'
-import logoR from '../assets/logoR.png'
-import pasang from '../assets/pasang.jpeg'
-
+import logoR from '../assets/icons/logoR.png'
+import pasang from '../assets/icons/pasang.jpeg'
+import whatsapp from '../assets/icons/whatsapp.svg'
+import email from '../assets/icons/mail.svg'
+import location from '../assets/icons/location.svg'
+import instagram from '../assets/icons/instagram.svg'
+import facebook from '../assets/icons/facebook.svg'
+import linkedin from '../assets/icons/linkedin.svg'
+import youtube from '../assets/icons/youtube.svg'
 const Navbar = () => {
 
   const [menuOpen, setMenuOpen] = useState(false);
@@ -9,6 +15,38 @@ const Navbar = () => {
   return (
     <>
       <div className="body w-full h-screen bg-red-500">
+
+        <div className="Links flex justify-between">
+          <div className="contact flex space-x-10">
+            <span className='flex'>
+              <img src={whatsapp} alt="" />
+              <p>9849354335</p>
+            </span>
+            <span className='flex'>
+              <img src={email} alt="" />
+              <p>agrokart@gmail.com</p>
+            </span>
+            <span className='flex'>
+              <img src={location} alt="" />
+              <p>Kathmandu,Nepal</p>
+            </span>
+          </div>
+
+          <div className="social_media_links">
+            <div className="facebook">
+              <span><img src={facebook} alt="" /></span>
+            </div>
+            <div className="youtube">
+              <span><img src={youtube} alt="" /></span>
+            </div>
+            <div className="instagram">
+              <span><img src={instagram} alt="" /></span>
+            </div>
+            <div className="linkedin">
+              <span><img src={linkedin} alt="" /></span>
+            </div>
+          </div>
+        </div>
 
         <div className="navbar bg-[#ffffff] flex justify-between items-center">
           <div className="logo w-30">

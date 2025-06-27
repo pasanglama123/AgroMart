@@ -1,28 +1,34 @@
 import react from 'react';
 import './App.css'
-// import Navbar from './Components/Navbar.jsx'
-import Login from './Components/Login.jsx';
-import Signup from './Components/Signup.jsx'
+import Navbar from './Components/Navbar.jsx'
+import Login from './Components/login/Login.jsx';
+import Signup from './Components/signup/Signup.jsx'
+import Product from './Components/product/Product.jsx'
+import ProductDescription  from './Components/product/ProductDescription.jsx'
+import Shop from './Components/shop/Shop.jsx'
 import {
-  BrowserRouter as Routers,
+  BrowserRouter,
   Routes,
   Route,
   Link,
   Navigate
 } from 'react-router-dom';
-import Navbar from './Components/Navbar.jsx';
+
 
 function App() {
   
   return (
     <>
     {/* <Navbar/> */}
-    <Routers>
+    <BrowserRouter>
       <Routes>
-        <Route path='/' element={<Login/>}/>
-        <Route path='/signup' element={<Signup/>}></Route>
+        <Route path='/' element={<Product/>}/>
+        <Route path="/shop" element={<Shop/>}/>
+        {/* <Route path='/' element={<Login/>}/>
+        <Route path='/signup' element={<Signup/>}/> */}
+        <Route path='/productDescription' element={<ProductDescription/>}/>
       </Routes>
-    </Routers>
+    </BrowserRouter>
     </>
   )
 }
